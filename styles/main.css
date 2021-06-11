@@ -8,6 +8,8 @@
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .global__btn:hover {
@@ -30,6 +32,15 @@ header .header__hero {
           justify-content: center;
 }
 
+@media (min-width: 1400px) {
+  header .header__hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+
 header .header__hero .hero__logo {
   margin-top: 1rem;
 }
@@ -44,11 +55,31 @@ header .header__hero .hero__search {
           align-items: center;
 }
 
+@media (min-width: 1400px) {
+  header .header__hero .hero__search {
+    margin: 1rem 0 0 2rem;
+  }
+}
+
 header .header__hero .hero__search .hero__input {
   color: #49a010;
   border: 2px solid #49a010;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@media (min-width: 600px) {
+  header .header__hero .hero__search .hero__input {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header .header__hero .hero__search .hero__input {
+    font-size: 1.3rem;
+  }
 }
 
 header .header__hero .hero__search .search__btn {
@@ -62,6 +93,24 @@ header .header__hero .hero__search .search__btn .search__icon {
   border: 2px solid #49a010;
   border-left: none;
   font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  header .header__hero .hero__search .search__btn .search__icon {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header .header__hero .hero__search .search__btn .search__icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .header__hero .hero__search .search__btn .search__icon {
+    font-size: 1.25rem;
+  }
 }
 
 header .header__hero .hero__search .hero__input:focus {
@@ -99,9 +148,34 @@ header nav {
   margin-top: 1rem;
 }
 
+@media (min-width: 1000px) {
+  header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
 header nav .nav__btn {
   text-transform: inherit;
   letter-spacing: inherit;
+}
+
+@media (min-width: 600px) {
+  header nav .nav__btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header nav .nav__btn {
+    font-size: 1.2rem;
+  }
 }
 
 header nav .nav__ul {
@@ -115,6 +189,12 @@ header nav .nav__ul {
   margin-top: 1rem;
 }
 
+@media (min-width: 1000px) {
+  header nav .nav__ul {
+    margin-top: 0;
+  }
+}
+
 header nav .nav__ul .nav__li {
   padding: 0.5rem;
 }
@@ -123,6 +203,18 @@ header nav .nav__ul .nav__li .nav__link {
   color: #49a010;
   text-decoration: none;
   font-size: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  header nav .nav__ul .nav__li .nav__link {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header nav .nav__ul .nav__li .nav__link {
+    font-size: 1.4rem;
+  }
 }
 
 header nav .nav__ul .nav__li .nav__link:hover {
@@ -162,11 +254,35 @@ header .hero__container .hero__layer {
   padding: 2rem 1rem;
 }
 
+@media (min-width: 1400px) {
+  header .hero__container .hero__layer {
+    margin: 3rem 0;
+  }
+}
+
 header .hero__container .hero__layer .hero__h1 {
   color: #49a010;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 3px;
+}
+
+@media (min-width: 600px) {
+  header .hero__container .hero__layer .hero__h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header .hero__container .hero__layer .hero__h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .hero__container .hero__layer .hero__h1 {
+    font-size: 1.2rem;
+  }
 }
 
 header .hero__container .hero__layer .hero__p {
@@ -175,9 +291,47 @@ header .hero__container .hero__layer .hero__p {
   font-weight: 700;
 }
 
+@media (min-width: 600px) {
+  header .hero__container .hero__layer .hero__p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header .hero__container .hero__layer .hero__p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .hero__container .hero__layer .hero__p {
+    font-size: 1.7rem;
+    width: 40%;
+    text-align: center;
+  }
+}
+
 header .hero__container .hero__layer .hero__btn {
   margin-top: 0.5rem;
   font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  header .hero__container .hero__layer .hero__btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  header .hero__container .hero__layer .hero__btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .hero__container .hero__layer .hero__btn {
+    margin-top: 1rem;
+  }
 }
 
 body {

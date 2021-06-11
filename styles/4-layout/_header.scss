@@ -4,6 +4,9 @@ header {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    @include big-desktop {
+      flex-flow: row nowrap;
+    }
     .hero__logo {
       margin-top: 1rem;
     }
@@ -11,11 +14,22 @@ header {
       margin-top: 1rem;
       display: flex;
       align-items: center;
+      @include big-desktop {
+        margin: 1rem 0 0 2rem;
+      }
       .hero__input {
         color: $main-color;
         border: 2px solid $main-color;
         padding: 0.4rem 0.8rem;
         font-size: 1rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        @include tablet {
+          font-size: 1.2rem;
+        }
+        @include tablet-land {
+          font-size: 1.3rem;
+        }
       }
       .search__btn {
         color: white;
@@ -26,6 +40,15 @@ header {
           border: 2px solid $main-color;
           border-left: none;
           font-size: 0.9rem;
+          @include tablet {
+            font-size: 1.1rem;
+          }
+          @include tablet-land {
+            font-size: 1.2rem;
+          }
+          @include big-desktop {
+            font-size: 1.25rem;
+          }
         }
       }
       .hero__input:focus {
@@ -42,21 +65,41 @@ header {
     flex-flow: column nowrap;
     align-items: center;
     margin-top: 1rem;
+    @include desktop {
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
     .nav__btn {
       text-transform: inherit;
       letter-spacing: inherit;
+      @include tablet {
+        font-size: 1.1rem;
+      }
+      @include tablet-land {
+        font-size: 1.2rem;
+      }
     }
     .nav__ul {
       display: flex;
       justify-content: center;
       list-style-type: none;
       margin-top: 1rem;
+      @include desktop {
+        margin-top: 0;
+      }
       .nav__li {
         padding: 0.5rem;
         .nav__link {
           color: $main-color;
           text-decoration: none;
           font-size: 1.1rem;
+          @include tablet {
+            font-size: 1.3rem;
+          }
+          @include tablet-land {
+            font-size: 1.4rem;
+          }
         }
         .nav__link:hover {
           color: $main-color-hover;
@@ -80,20 +123,52 @@ header {
       width: fit-content;
       margin: 1rem 0;
       padding: 2rem 1rem;
+      @include big-desktop {
+        margin: 3rem 0;
+      }
       .hero__h1 {
         color: $main-color;
         text-transform: uppercase;
         font-size: 0.8rem;
         letter-spacing: 3px;
+        @include tablet {
+          font-size: 1rem;
+        }
+        @include tablet-land {
+          font-size: 1.1rem;
+        }
+        @include big-desktop {
+          font-size: 1.2rem;
+        }
       }
       .hero__p {
         margin-top: 0.5rem;
         font-size: 1.3rem;
         font-weight: 700;
+        @include tablet {
+          font-size: 1.5rem;
+        }
+        @include tablet-land {
+          font-size: 1.6rem;
+        }
+        @include big-desktop {
+          font-size: 1.7rem;
+          width: 40%;
+          text-align: center;
+        }
       }
       .hero__btn {
         margin-top: 0.5rem;
         font-size: 0.9rem;
+        @include tablet {
+          font-size: 1.1rem;
+        }
+        @include tablet-land {
+          font-size: 1.2rem;
+        }
+        @include big-desktop {
+          margin-top: 1rem;
+        }
       }
     }
   }
