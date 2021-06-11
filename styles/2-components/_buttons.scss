@@ -1,0 +1,15 @@
+.global__btn {
+  background-color: $main-color;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.global__btn:hover {
+  background-color: $main-color-hover;
+}

@@ -1,0 +1,178 @@
+.global__btn {
+  background-color: #49a010;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.global__btn:hover {
+  background-color: #56be10;
+}
+
+header .header__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header__hero .hero__logo {
+  margin-top: 1rem;
+}
+
+header .header__hero .hero__search {
+  margin-top: 1rem;
+}
+
+header .header__hero .hero__search .hero__input {
+  color: #49a010;
+  border: 2px solid #49a010;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+}
+
+header .header__hero .hero__search .hero__input:focus {
+  outline: none;
+  color: #49a010;
+}
+
+header .header__hero .hero__search .hero__input::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+header .header__hero .hero__search .hero__input:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+header .header__hero .hero__search .hero__input::-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+header .header__hero .hero__search .hero__input::placeholder {
+  color: #a1a1a1;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+header nav .nav__btn {
+  text-transform: inherit;
+}
+
+header nav .nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+header nav .nav__ul .nav__li {
+  padding: 0.5rem;
+}
+
+header nav .nav__ul .nav__li .nav__link {
+  color: #49a010;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header nav .nav__ul .nav__li .nav__link:hover {
+  color: #56be10;
+}
+
+header .hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(/img/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .hero__container .hero__layer {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
+}
+
+header .hero__container .hero__layer .hero__h1 {
+  color: #49a010;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+header .hero__container .hero__layer .hero__p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+header .hero__container .hero__layer .hero__btn {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body .wrapper {
+  padding: 1rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */

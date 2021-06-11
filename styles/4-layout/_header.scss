@@ -1,0 +1,86 @@
+header {
+  .header__hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    .hero__logo {
+      margin-top: 1rem;
+    }
+    .hero__search {
+      margin-top: 1rem;
+      .hero__input {
+        color: $main-color;
+        border: 2px solid $main-color;
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+      }
+      .hero__input:focus {
+        outline: none;
+        color: $main-color;
+      }
+      .hero__input::placeholder {
+        color: $gray-color;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 1rem;
+    .nav__btn {
+      text-transform: inherit;
+    }
+    .nav__ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin-top: 1rem;
+      .nav__li {
+        padding: 0.5rem;
+        .nav__link {
+          color: $main-color;
+          text-decoration: none;
+          font-size: 1.1rem;
+        }
+        .nav__link:hover {
+          color: $main-color-hover;
+        }
+      }
+    }
+  }
+  .hero__container {
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .hero__layer {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 20px 0 20px 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      width: fit-content;
+      margin: 1rem 0;
+      padding: 2rem 1rem;
+      .hero__h1 {
+        color: $main-color;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+      }
+      .hero__p {
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+      .hero__btn {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
