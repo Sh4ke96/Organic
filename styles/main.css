@@ -36,6 +36,12 @@ header .header__hero .hero__logo {
 
 header .header__hero .hero__search {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header__hero .hero__search .hero__input {
@@ -43,6 +49,19 @@ header .header__hero .hero__search .hero__input {
   border: 2px solid #49a010;
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
+}
+
+header .header__hero .hero__search .search__btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+header .header__hero .hero__search .search__btn .search__icon {
+  padding: 0.57rem 0.8rem;
+  border: 2px solid #49a010;
+  border-left: none;
+  font-size: 0.9rem;
 }
 
 header .header__hero .hero__search .hero__input:focus {
@@ -82,6 +101,7 @@ header nav {
 
 header nav .nav__btn {
   text-transform: inherit;
+  letter-spacing: inherit;
 }
 
 header nav .nav__ul {
