@@ -119,6 +119,86 @@ main .section__about .about__container .about__card .about__p {
   }
 }
 
+main .section__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(73, 160, 16, 0.1);
+  padding: 2rem 0;
+}
+
+@media (min-width: 600px) {
+  main .section__categories {
+    padding: 2rem;
+  }
+}
+
+main .section__categories .categories__title {
+  font-size: 2rem;
+}
+
+main .section__categories .categories__container {
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  main .section__categories .categories__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+main .section__categories .categories__container .categories__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  main .section__categories .categories__container .categories__card {
+    padding: 1rem;
+  }
+}
+
+main .section__categories .categories__container .categories__card .categories__img {
+  border: 1px solid #a1a1a1;
+  border-radius: 50%;
+}
+
+main .section__categories .categories__container .categories__card .categories__img:hover {
+  border: 1px solid #49a010;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main .section__categories .categories__container .categories__card .categories__subtitle {
+  color: #49a010;
+  margin-top: 0.5rem;
+}
+
 header .header__info {
   display: -webkit-box;
   display: -ms-flexbox;

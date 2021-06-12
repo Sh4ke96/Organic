@@ -53,4 +53,47 @@ main {
       }
     }
   }
+  .section__categories {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(73, 160, 16, 0.1);
+    padding: 2rem 0;
+    @include tablet {
+      padding: 2rem;
+    }
+    .categories__title {
+      font-size: 2rem;
+    }
+    .categories__container {
+      margin-top: 2rem;
+      @include tablet {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+      .categories__card {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: 2rem;
+        @include tablet {
+          padding: 1rem;
+        }
+        .categories__img {
+          border: 1px solid $gray-color;
+          border-radius: 50%;
+        }
+        .categories__img:hover {
+          border: 1px solid $main-color;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .categories__subtitle {
+          color: $main-color;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
 }
