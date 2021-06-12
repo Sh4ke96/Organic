@@ -1,4 +1,27 @@
 header {
+  .header__info {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(73, 160, 16, 0.2);
+    color: $gray-color;
+    padding: 0 0 0.5rem 0;
+    .header__phone {
+      color: $main-color;
+      margin-right: 0.3rem;
+    }
+    .header__icon {
+      color: $main-color;
+      margin-left: 0.15rem;
+    }
+    .header__language {
+      display: flex;
+      margin-left: 1rem;
+      .header__span {
+        display: flex;
+        padding: 0 1rem;
+      }
+    }
+  }
   .header__hero {
     display: flex;
     flex-flow: column nowrap;
@@ -6,16 +29,21 @@ header {
     justify-content: center;
     @include big-desktop {
       flex-flow: row nowrap;
+      justify-content: space-evenly;
+      padding: 1rem 0;
     }
     .hero__logo {
       margin-top: 1rem;
+      @include big-desktop {
+        margin-top: 0;
+      }
     }
     .hero__search {
       margin-top: 1rem;
       display: flex;
       align-items: center;
       @include big-desktop {
-        margin: 1rem 0 0 2rem;
+        margin-top: 0;
       }
       .hero__input {
         color: $main-color;
@@ -36,7 +64,7 @@ header {
         border: none;
         cursor: pointer;
         .search__icon {
-          padding: 0.57rem 0.8rem;
+          padding: 0.55rem 0.8rem;
           border: 2px solid $main-color;
           border-left: none;
           font-size: 0.9rem;
@@ -47,7 +75,7 @@ header {
             font-size: 1.2rem;
           }
           @include big-desktop {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
           }
         }
       }
@@ -59,32 +87,39 @@ header {
         color: $gray-color;
       }
     }
-  }
-  nav {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin-top: 1rem;
-    @include desktop {
-      flex-flow: row nowrap;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .nav__btn {
+    .header__btn {
       text-transform: inherit;
       letter-spacing: inherit;
+      margin-top: 1rem;
+      letter-spacing: 1px;
       @include tablet {
         font-size: 1.1rem;
       }
       @include tablet-land {
         font-size: 1.2rem;
       }
+      @include big-desktop {
+        margin-top: 0;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(73, 160, 16, 0.2);
+    @include desktop {
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
+    @include big-desktop {
+      margin-top: 0;
     }
     .nav__ul {
       display: flex;
       justify-content: center;
       list-style-type: none;
-      margin-top: 1rem;
       @include desktop {
         margin-top: 0;
       }
@@ -111,7 +146,7 @@ header {
     display: flex;
     justify-content: center;
     background-image: url(/img/hero-bg.png);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     .hero__layer {
@@ -124,7 +159,7 @@ header {
       margin: 1rem 0;
       padding: 2rem 1rem;
       @include big-desktop {
-        margin: 3rem 0;
+        margin: 4rem 0;
       }
       .hero__h1 {
         color: $main-color;
@@ -160,6 +195,7 @@ header {
       .hero__btn {
         margin-top: 0.5rem;
         font-size: 0.9rem;
+        letter-spacing: 1px;
         @include tablet {
           font-size: 1.1rem;
         }
