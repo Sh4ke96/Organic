@@ -199,6 +199,122 @@ main .section__categories .categories__container .categories__card .categories__
   margin-top: 0.5rem;
 }
 
+main .section__promotion {
+  padding: 2rem 1rem;
+}
+
+main .section__promotion .promotion__card {
+  border: 1px solid #49a010;
+  border-radius: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main .section__promotion .promotion__card .promotion__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main .section__promotion .promotion__card .promotion__container .promotion__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 0 20px 0;
+}
+
+main .section__promotion .promotion__card .promotion__discount {
+  position: absolute;
+  z-index: 9999;
+  right: 3rem;
+  background-color: #49a010;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+main .section__promotion .promotion__card .promotion__title {
+  font-weight: normal;
+  margin-top: 0.5rem;
+}
+
+main .section__promotion .promotion__card .price__container {
+  margin-top: 0.5rem;
+}
+
+main .section__promotion .promotion__card .price__container .promotion__price {
+  color: #49a010;
+  font-size: 1.2rem;
+}
+
+main .section__promotion .promotion__card .price__container .promotion__price-gray {
+  color: #a1a1a1;
+  font-size: 1.2rem;
+}
+
+main .section__promotion .promotion__card .promotion__bar {
+  height: 15px;
+  width: 100%;
+  background-color: #e1e1e1;
+}
+
+main .section__promotion .promotion__card .promotion__bar .promotion__progress {
+  background-color: #49a010;
+  height: 15px;
+  width: 35%;
+}
+
+main .section__promotion .promotion__card .promotion__available,
+main .section__promotion .promotion__card .promotion__sold {
+  color: #a1a1a1;
+  font-size: 0.8rem;
+}
+
+main .section__promotion .promotion__card .promotion__left__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.5rem;
+}
+
+main .section__promotion .promotion__card .promotion__left__container .promotion__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #49a010;
+  color: #fff;
+  padding: 0.3rem;
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  margin: 0.4rem;
+}
+
 header .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
