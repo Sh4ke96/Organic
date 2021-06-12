@@ -1,0 +1,56 @@
+main {
+  // SECTION ABOUT
+  .section__about {
+    @include big-desktop {
+      padding: 0 10rem;
+    }
+    .about__container {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      margin-top: 1rem;
+      @include desktop {
+        flex-flow: row nowrap;
+      }
+      @include big-desktop {
+        justify-content: space-between;
+      }
+      .about__card {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        .about__icon {
+          color: $main-color;
+          font-size: 2rem;
+          @include tablet-land {
+            font-size: 3rem;
+          }
+          @include big-desktop {
+            padding: 0;
+            justify-content: space-between;
+          }
+        }
+        .about__title {
+          font-size: 1.1rem;
+          font-weight: normal;
+          margin-top: 0.5rem;
+          @include tablet-land {
+            font-size: 1.5rem;
+          }
+        }
+        .about__p {
+          margin-top: 0.5rem;
+          color: $gray-color;
+          @include tablet-land {
+            font-size: 1.2rem;
+          }
+          @include desktop {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
