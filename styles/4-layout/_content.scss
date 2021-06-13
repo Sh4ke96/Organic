@@ -98,66 +98,106 @@ main {
   }
   .section__promotion {
     padding: 2rem 1rem;
+    @include tablet {
+      padding: 5rem;
+    }
+    @include tablet-land {
+      display: flex;
+      justify-content: center;
+      padding: 3rem;
+    }
     .promotion__card {
       border: 1px solid $main-color;
       border-radius: 20px 0 20px 0;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      padding: 2rem;
+      padding: 1rem;
+      @include tablet-land {
+        width: fit-content;
+      }
+      @include desktop {
+        flex-flow: row nowrap;
+      }
       .promotion__container {
-        display: flex;
-        justify-content: center;
         position: relative;
         .promotion__img {
           max-width: 100%;
           height: auto;
           border-radius: 20px 0 20px 0;
+          @include tablet-land {
+            width: 350px;
+          }
+          @include desktop {
+            padding: 1rem;
+          }
         }
       }
-      .promotion__discount {
-        position: absolute;
-        z-index: 9999;
-        right: 3rem;
-        background-color: $main-color;
-        padding: 0.2rem 0.5rem;
-        color: #fff;
-        font-size: 0.9rem;
+    }
+    .promotion__wrapper {
+      @include desktop {
+        text-align: left;
       }
       .promotion__title {
         font-weight: normal;
         margin-top: 0.5rem;
+        @include desktop {
+          font-size: 3rem;
+        }
       }
       .price__container {
         margin-top: 0.5rem;
         .promotion__price {
           color: $main-color;
           font-size: 1.2rem;
+          @include desktop {
+            font-size: 2.2rem;
+          }
         }
         .promotion__price-gray {
           color: $gray-color;
           font-size: 1.2rem;
+          @include desktop {
+            font-size: 2.2rem;
+            margin-left: 1rem;
+          }
         }
       }
       .promotion__bar {
         height: 15px;
         width: 100%;
         background-color: #e1e1e1;
+        @include desktop {
+          width: 550px;
+        }
         .promotion__progress {
           background-color: $main-color;
           height: 15px;
           width: 35%;
         }
       }
-      .promotion__available,
-      .promotion__sold {
-        color: $gray-color;
-        font-size: 0.8rem;
+      .available__wrapper {
+        @include desktop {
+          margin-top: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+        }
+        .promotion__available,
+        .promotion__sold {
+          color: $gray-color;
+          font-size: 0.8rem;
+          @include desktop {
+            font-size: 1.2rem;
+          }
+        }
       }
       .promotion__left__container {
         display: flex;
         justify-content: center;
         margin-top: 0.5rem;
+        @include desktop {
+          justify-content: flex-start;
+        }
         .promotion__left {
           display: flex;
           flex-flow: column nowrap;
