@@ -404,6 +404,51 @@ main .section__promotion .promotion__wrapper .promotion__left__container .promot
   margin: 0.4rem;
 }
 
+main .section__trendy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .section__trendy .trendy__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+main .section__trendy .trendy__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+main .section__trendy .trendy__ul .trendy__link {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+main .section__trendy .trendy__ul .trendy__link .trendy__li {
+  color: #a1a1a1;
+}
+
+main .section__trendy .trendy__ul .trendy__link .trendy__li:hover {
+  color: #49a010;
+}
+
+main .section__trendy .trendy__ul .trendy__link:first-child .trendy__li {
+  color: #49a010;
+}
+
 header .header__info {
   display: -webkit-box;
   display: -ms-flexbox;

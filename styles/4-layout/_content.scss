@@ -53,6 +53,7 @@ main {
       }
     }
   }
+  // SECTION CATEGORIES
   .section__categories {
     display: flex;
     flex-flow: column nowrap;
@@ -96,6 +97,7 @@ main {
       }
     }
   }
+  // SECTION PROMOTION
   .section__promotion {
     padding: 2rem 1rem;
     @include tablet {
@@ -211,6 +213,34 @@ main {
           text-transform: uppercase;
           margin: 0.4rem;
         }
+      }
+    }
+  }
+  // SECTION TRENDY
+  .section__trendy {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .trendy__title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .trendy__ul {
+      display: flex;
+      list-style: none;
+      .trendy__link {
+        text-decoration: none;
+        padding: 0.5rem;
+        .trendy__li {
+          color: $gray-color;
+        }
+        .trendy__li:hover {
+          color: $main-color;
+        }
+      }
+      .trendy__link:first-child .trendy__li {
+        color: $main-color;
       }
     }
   }
