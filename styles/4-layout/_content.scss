@@ -350,4 +350,40 @@ main {
       }
     }
   }
+  // SECTION TOP
+  .section__top {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    .top__wrapper {
+      .top__title {
+        position: relative;
+        text-align: center;
+      }
+      .top__title:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 45px;
+        border-bottom: 1px solid $main-color;
+      }
+      .top__card {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        .price__container {
+          margin-left: 0.5rem;
+          .top__price {
+            color: $main-color;
+          }
+          .last__price {
+            color: $gray-color;
+          }
+        }
+      }
+    }
+  }
 }

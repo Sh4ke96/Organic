@@ -608,6 +608,59 @@ main .section__friday .friday__container .friday__btn {
   }
 }
 
+main .section__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+main .section__top .top__wrapper .top__title {
+  position: relative;
+  text-align: center;
+}
+
+main .section__top .top__wrapper .top__title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 45px;
+  border-bottom: 1px solid #49a010;
+}
+
+main .section__top .top__wrapper .top__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+main .section__top .top__wrapper .top__card .price__container {
+  margin-left: 0.5rem;
+}
+
+main .section__top .top__wrapper .top__card .price__container .top__price {
+  color: #49a010;
+}
+
+main .section__top .top__wrapper .top__card .price__container .last__price {
+  color: #a1a1a1;
+}
+
 header .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
