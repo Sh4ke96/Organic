@@ -313,4 +313,41 @@ main {
       }
     }
   }
+  // SECTION FRIDAY
+  .section__friday {
+    margin-top: 2rem;
+    background-image: url(/img/black-friday.png);
+    background-position: center center;
+    background-size: cover;
+    .friday__container {
+      padding: 5rem 2rem;
+      @include tablet {
+        padding: 5rem 8rem 5rem 2rem;
+      }
+      @include big-desktop {
+        padding: 5rem 8rem 5rem 5rem;
+      }
+      .friday__subtitle {
+        color: $main-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        @include tablet-land {
+          font-size: 1.1rem;
+        }
+      }
+      .friday__title {
+        text-transform: uppercase;
+        @include tablet-land {
+          font-size: 2rem;
+        }
+      }
+      .friday__btn {
+        margin-top: 1rem;
+        @include tablet-land {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
 }

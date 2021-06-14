@@ -552,6 +552,62 @@ main .section__trendy .trendy__wrapper .trendy__card .trendy__price .price__gray
   margin-left: 0.5rem;
 }
 
+main .section__friday {
+  margin-top: 2rem;
+  background-image: url(/img/black-friday.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+main .section__friday .friday__container {
+  padding: 5rem 2rem;
+}
+
+@media (min-width: 600px) {
+  main .section__friday .friday__container {
+    padding: 5rem 8rem 5rem 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  main .section__friday .friday__container {
+    padding: 5rem 8rem 5rem 5rem;
+  }
+}
+
+main .section__friday .friday__container .friday__subtitle {
+  color: #49a010;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 760px) {
+  main .section__friday .friday__container .friday__subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+main .section__friday .friday__container .friday__title {
+  text-transform: uppercase;
+}
+
+@media (min-width: 760px) {
+  main .section__friday .friday__container .friday__title {
+    font-size: 2rem;
+  }
+}
+
+main .section__friday .friday__container .friday__btn {
+  margin-top: 1rem;
+}
+
+@media (min-width: 760px) {
+  main .section__friday .friday__container .friday__btn {
+    font-size: 1.3rem;
+  }
+}
+
 header .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
