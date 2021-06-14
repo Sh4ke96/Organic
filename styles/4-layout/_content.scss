@@ -230,6 +230,9 @@ main {
       .trendy__ul {
         display: flex;
         list-style: none;
+        @include tablet {
+          font-size: 1.3rem;
+        }
         .trendy__link {
           text-decoration: none;
           padding: 0.5rem;
@@ -247,10 +250,27 @@ main {
     }
     .trendy__wrapper {
       padding: 1rem;
+      @include desktop {
+        display: flex;
+      }
       .trendy__card {
         margin-top: 2rem;
+        @include tablet {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+        }
         .trendy__img__container {
           position: relative;
+          @include tablet {
+            width: 65%;
+          }
+          @include tablet-land {
+            width: 50%;
+          }
+          @include desktop {
+            width: 80%;
+          }
           .trendy__img {
             max-width: 100%;
             height: auto;

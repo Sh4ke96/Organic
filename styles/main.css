@@ -432,6 +432,12 @@ main .section__trendy .trendy__menu .trendy__ul {
   list-style: none;
 }
 
+@media (min-width: 600px) {
+  main .section__trendy .trendy__menu .trendy__ul {
+    font-size: 1.3rem;
+  }
+}
+
 main .section__trendy .trendy__menu .trendy__ul .trendy__link {
   text-decoration: none;
   padding: 0.5rem;
@@ -453,12 +459,53 @@ main .section__trendy .trendy__wrapper {
   padding: 1rem;
 }
 
+@media (min-width: 1000px) {
+  main .section__trendy .trendy__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 main .section__trendy .trendy__wrapper .trendy__card {
   margin-top: 2rem;
 }
 
+@media (min-width: 600px) {
+  main .section__trendy .trendy__wrapper .trendy__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container {
   position: relative;
+}
+
+@media (min-width: 600px) {
+  main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 760px) {
+  main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container {
+    width: 80%;
+  }
 }
 
 main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container .trendy__img {
