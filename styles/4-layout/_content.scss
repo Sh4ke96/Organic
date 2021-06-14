@@ -222,25 +222,74 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    .trendy__title {
-      font-size: 2rem;
-      text-align: center;
-    }
-    .trendy__ul {
-      display: flex;
-      list-style: none;
-      .trendy__link {
-        text-decoration: none;
-        padding: 0.5rem;
-        .trendy__li {
-          color: $gray-color;
+    .trendy__menu {
+      .trendy__title {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .trendy__ul {
+        display: flex;
+        list-style: none;
+        .trendy__link {
+          text-decoration: none;
+          padding: 0.5rem;
+          .trendy__li {
+            color: $gray-color;
+          }
+          .trendy__li:hover {
+            color: $main-color;
+          }
         }
-        .trendy__li:hover {
+        .trendy__link:first-child .trendy__li {
           color: $main-color;
         }
       }
-      .trendy__link:first-child .trendy__li {
-        color: $main-color;
+    }
+    .trendy__wrapper {
+      padding: 1rem;
+      .trendy__card {
+        margin-top: 2rem;
+        .trendy__img__container {
+          position: relative;
+          .trendy__img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px 0 20px 0;
+            border: 2px solid $gray-color;
+          }
+        }
+        .trendy__hover {
+          background-color: rgba(73, 160, 16, 0.8);
+          color: white;
+          width: 100%;
+          position: absolute;
+          right: 0;
+          bottom: 25%;
+          text-align: center;
+          display: none;
+          .hover__icon {
+            padding: 0.5rem;
+            font-size: 1.1rem;
+          }
+        }
+        .trendy__img:hover + .trendy__hover {
+          display: block;
+        }
+        .trendy__img:hover {
+          border: 2px solid $main-color;
+        }
+        .trendy__name {
+          font-weight: normal;
+        }
+        .trendy__price {
+          .price__green {
+            color: $main-color;
+          }
+          .price__gray {
+            color: $gray-color;
+            margin-left: 0.5rem;
+          }
+        }
       }
     }
   }

@@ -420,33 +420,89 @@ main .section__trendy {
           align-items: center;
 }
 
-main .section__trendy .trendy__title {
+main .section__trendy .trendy__menu .trendy__title {
   font-size: 2rem;
   text-align: center;
 }
 
-main .section__trendy .trendy__ul {
+main .section__trendy .trendy__menu .trendy__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-main .section__trendy .trendy__ul .trendy__link {
+main .section__trendy .trendy__menu .trendy__ul .trendy__link {
   text-decoration: none;
   padding: 0.5rem;
 }
 
-main .section__trendy .trendy__ul .trendy__link .trendy__li {
+main .section__trendy .trendy__menu .trendy__ul .trendy__link .trendy__li {
   color: #a1a1a1;
 }
 
-main .section__trendy .trendy__ul .trendy__link .trendy__li:hover {
+main .section__trendy .trendy__menu .trendy__ul .trendy__link .trendy__li:hover {
   color: #49a010;
 }
 
-main .section__trendy .trendy__ul .trendy__link:first-child .trendy__li {
+main .section__trendy .trendy__menu .trendy__ul .trendy__link:first-child .trendy__li {
   color: #49a010;
+}
+
+main .section__trendy .trendy__wrapper {
+  padding: 1rem;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card {
+  margin-top: 2rem;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container {
+  position: relative;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__img__container .trendy__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 0 20px 0;
+  border: 2px solid #a1a1a1;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__hover {
+  background-color: rgba(73, 160, 16, 0.8);
+  color: white;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  text-align: center;
+  display: none;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__hover .hover__icon {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__img:hover + .trendy__hover {
+  display: block;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__img:hover {
+  border: 2px solid #49a010;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__name {
+  font-weight: normal;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__price .price__green {
+  color: #49a010;
+}
+
+main .section__trendy .trendy__wrapper .trendy__card .trendy__price .price__gray {
+  color: #a1a1a1;
+  margin-left: 0.5rem;
 }
 
 header .header__info {
