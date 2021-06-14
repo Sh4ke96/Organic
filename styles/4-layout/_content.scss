@@ -250,7 +250,7 @@ main {
     }
     .trendy__wrapper {
       padding: 1rem;
-      @include desktop {
+      @include tablet-land {
         display: flex;
       }
       .trendy__card {
@@ -266,7 +266,7 @@ main {
             width: 65%;
           }
           @include tablet-land {
-            width: 50%;
+            width: 70%;
           }
           @include desktop {
             width: 80%;
@@ -353,14 +353,29 @@ main {
   // SECTION TOP
   .section__top {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    @include tablet {
+      flex-flow: row nowrap;
+    }
+    @include desktop {
+      justify-content: space-between;
+    }
+    @include big-desktop {
+      justify-content: center;
+    }
     .top__wrapper {
+      @include big-desktop {
+        padding: 0 5rem;
+      }
       .top__title {
         position: relative;
         text-align: center;
+        @include desktop {
+          font-size: 1.8rem;
+        }
       }
       .top__title:before {
         content: "";
@@ -376,6 +391,9 @@ main {
         margin: 1rem;
         .price__container {
           margin-left: 0.5rem;
+          @include desktop {
+            font-size: 1.3rem;
+          }
           .top__price {
             color: $main-color;
           }
