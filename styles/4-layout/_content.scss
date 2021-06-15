@@ -413,10 +413,17 @@ main {
       }
     }
     .blog__wrapper {
-      @include big-desktop {
+      @include desktop {
         display: flex;
         align-items: center;
-        padding: 1rem 5rem;
+        flex-flow: column nowrap;
+      }
+      @include big-desktop {
+        flex-flow: row nowrap;
+        align-items: unset;
+        justify-content: space-evenly;
+        padding: 0 10rem;
+        margin-top: 2rem;
       }
       .blog__big {
         display: flex;
@@ -429,26 +436,32 @@ main {
         @include tablet-land {
           margin: 1rem 8rem;
         }
+        @include desktop {
+          width: 50%;
+        }
         @include big-desktop {
-          width: fit-content;
-          margin: 1rem;
+          width: 40%;
+          margin: 0;
           justify-content: flex-start;
           align-items: center;
-          height: fit-content;
         }
         .big__img {
           max-width: 100%;
+          @include tablet {
+            width: 100%;
+          }
         }
         .blog__title {
           color: $main-color;
           font-size: 1.1rem;
           margin-top: 0.5rem;
           @include tablet {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
           }
           @include big-desktop {
             font-size: 1.4rem;
             text-align: center;
+            padding: 0 0.1rem;
           }
         }
         .blog__p {
@@ -457,16 +470,16 @@ main {
           text-align: center;
           @include tablet {
             padding: 0 1rem;
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
           @include big-desktop {
             font-size: 1.1rem;
           }
         }
         .blog__btn {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
           margin: 0.5rem;
-          @include tablet-land {
+          @include tablet {
             margin: 1.5rem;
           }
           @include big-desktop {
@@ -481,11 +494,12 @@ main {
         align-items: center;
         margin: 1rem;
         @include tablet-land {
-          flex-flow: row nowrap;
+          margin: 0;
         }
         @include big-desktop {
-          margin: 0 1rem;
-          height: fit-content;
+          margin: 0;
+          justify-content: space-between;
+          width: 50%;
         }
         .blog__card {
           display: flex;
@@ -494,33 +508,49 @@ main {
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
             rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           @include tablet-land {
-            margin: 1rem;
+            margin: 1rem 8rem;
+          }
+          @include desktop {
+            width: 60%;
           }
           @include big-desktop {
-            margin: 0 1rem;
+            width: 100%;
+            margin: 0;
           }
           .blog__img__small {
             width: 100%;
             height: 100%;
+            @include desktop {
+              width: 35%;
+            }
           }
           .small__wrapper {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
+            align-items: flex-start;
             margin-left: 0.8rem;
             .blog__title__small {
               color: $main-color;
               font-size: 0.8rem;
+              @include tablet {
+                font-size: 1.5rem;
+              }
             }
             .blog__p__small {
               font-size: 0.8rem;
               color: $gray-color;
               margin-top: 0.7rem;
+              @include tablet {
+                font-size: 1.2rem;
+              }
             }
             .blog__btn__small {
               font-size: 0.5rem;
               margin-top: 0.7rem;
-              width: 75%;
+              @include tablet {
+                font-size: 0.8rem;
+              }
             }
           }
         }
