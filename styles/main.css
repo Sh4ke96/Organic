@@ -1432,13 +1432,159 @@ header .hero__container .hero__layer .hero__btn {
   }
 }
 
+footer {
+  background-color: rgba(73, 160, 16, 0.1);
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+footer .footer__socials .footer__socials-text {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer .footer__socials .footer__socials-follow {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__socials .footer__socials-follow .footer__socials-follow-container .footer__icons {
+  color: #49a010;
+  font-size: 1.5rem;
+  margin: 0.5rem 0.8rem;
+}
+
+footer .footer__socials .footer__socials-follow .footer__socials-follow-container .footer__icons:hover {
+  color: #56be10;
+  cursor: pointer;
+}
+
+footer .footer__menu .footer__ul {
+  text-align: center;
+  list-style: none;
+}
+
+footer .footer__menu .footer__ul .footer__link {
+  text-decoration: none;
+  color: black;
+}
+
+footer .footer__menu .footer__ul .footer__link .footer__li {
+  padding: 0.5rem 0;
+}
+
+footer .footer__menu .footer__ul .footer__link:hover {
+  color: #49a010;
+}
+
+footer .footer__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+footer .footer__newsletter .footer__newsletter-title {
+  font-weight: normal;
+}
+
+footer .footer__newsletter .footer__input {
+  color: #49a010;
+  border: 2px solid #49a010;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 250px;
+  margin-top: 0.5rem;
+}
+
+footer .footer__newsletter .footer__input::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+footer .footer__newsletter .footer__input:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+footer .footer__newsletter .footer__input::-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+footer .footer__newsletter .footer__input::placeholder {
+  color: #a1a1a1;
+}
+
+footer .footer__newsletter .footer__input:focus {
+  outline: none;
+  color: #49a010;
+}
+
+footer .footer__newsletter .footer__btn {
+  margin-top: 1rem;
+}
+
+footer .footer__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  background-color: #49a010;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  color: white;
+}
+
 body {
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
 }
 
 body .wrapper {
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 * {
