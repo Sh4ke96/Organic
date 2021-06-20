@@ -404,6 +404,13 @@ main .section__promotion .promotion__wrapper .promotion__left__container .promot
   margin: 0.4rem;
 }
 
+@media (min-width: 1000px) {
+  main .section__promotion .promotion__wrapper .promotion__left__container .promotion__left {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 main .section__trendy {
   display: -webkit-box;
   display: -ms-flexbox;

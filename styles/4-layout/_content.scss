@@ -212,6 +212,10 @@ main {
           height: 50px;
           text-transform: uppercase;
           margin: 0.4rem;
+          @include desktop {
+            width: 75px;
+            height: 75px;
+          }
         }
       }
     }
