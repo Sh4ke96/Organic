@@ -531,6 +531,7 @@ main .section__trendy .trendy__wrapper .trendy__card .trendy__hover {
   bottom: 25%;
   text-align: center;
   display: none;
+  cursor: pointer;
 }
 
 main .section__trendy .trendy__wrapper .trendy__card .trendy__hover .hover__icon {
@@ -1639,13 +1640,24 @@ footer .footer__bar {
   }
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
 }
 
-body .wrapper {
+html body .wrapper {
   padding: 1rem 0 0 0;
+}
+
+html body .wrapper .scroll__up {
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  padding: 0.8rem;
 }
 
 * {

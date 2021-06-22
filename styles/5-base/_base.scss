@@ -1,7 +1,16 @@
-body {
-  font-size: 16px;
-  font-family: $main-font;
-  .wrapper {
-    padding: 1rem 0 0 0;
+html {
+  scroll-behavior: smooth;
+  body {
+    font-size: 16px;
+    font-family: $main-font;
+    .wrapper {
+      padding: 1rem 0 0 0;
+      .scroll__up {
+        position: fixed;
+        right: 1%;
+        bottom: 1%;
+        padding: 0.8rem;
+      }
+    }
   }
 }
