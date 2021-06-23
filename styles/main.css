@@ -562,7 +562,7 @@ main .section__trendy .trendy__wrapper .trendy__card .trendy__price .price__gray
 
 main .section__friday {
   margin-top: 2rem;
-  background-image: url(../../img/black-friday.png);
+  background-image: url(https://sh4ke96.github.io/Organic/img/black-friday.png);
   background-position: center center;
   background-size: cover;
 }
@@ -1331,7 +1331,7 @@ header .hero__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../../img/hero-bg.png);
+  background-image: url(https://sh4ke96.github.io/Organic/img/hero-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
