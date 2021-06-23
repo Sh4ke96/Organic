@@ -10,7 +10,7 @@ Organic website is shop template about fresh and healthy food. I used few librar
 
 * [JavaScript](https://developer.mozilla.org/pl/docs/Web/JavaScript)
 * [SASS](https://sass-lang.com)
-* [AOS](https://michalsnik.github.io/aos/) -  - Animate on scroll library.
+* [AOS](https://michalsnik.github.io/aos/) - Animate on scroll library.
 
 ## Author
 * Artur Michałek - [Sh4ke96](https://github.com/Sh4ke96)
